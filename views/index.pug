@@ -1,0 +1,14 @@
+html
+body
+p Payment with stripe in Nodejs express application.
+ 
+form(action="/pay", method="post")
+article
+label  Amount: $10.00  
+script(
+src="//checkout.stripe.com/v2/checkout.js",
+class="stripe-button",
+data-key='pk_test_51JXQSeSIwyRJ31Z686lFrUWLYgLjgqHFtiBKCUJxlsbG4KksXVNhAAZscLBLwErsyEDEDvM37edzVN1wnpsJh2PP00p6cP1tSm',
+data-locale="auto",
+data-description="Sample payment",
+data-amount="1")
